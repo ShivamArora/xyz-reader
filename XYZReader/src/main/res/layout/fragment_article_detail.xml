@@ -24,6 +24,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
                     android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
                      />
 
                 <!--<View
@@ -95,10 +96,11 @@
 
     <android.support.design.widget.FloatingActionButton android:id="@+id/share_fab"
         android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/fab_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_share"
+        app:elevation="@dimen/fab_elevation"
         android:contentDescription="@string/action_share" />
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
